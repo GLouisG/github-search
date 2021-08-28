@@ -3,6 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  urlToken : "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",
   production: false
 };
 
