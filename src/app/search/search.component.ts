@@ -6,10 +6,11 @@ import { SearchDataService } from '../services/search-data.service';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
-
+ 
   constructor(private searchService : SearchDataService) { }
-  
   ngOnInit(): void {
+   
   }
+ 
 
 }
