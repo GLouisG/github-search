@@ -2,3 +2,12 @@
   <h3>Gi Search</h3>
   <input type="text" placeholder="Git Searcher..." #finder (keyup) ="search(finder.value)" >
 </div>
+
+<div class="user">
+  <div *ngIf="users">
+    <p>Hi</p>
+    <img src="{{users.avatar_url}}" alt="IMG">
+    <p>{{users.login}}</p>
+   
+  </div>
+</div>

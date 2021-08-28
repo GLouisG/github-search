@@ -21,7 +21,7 @@ export class SearchDataService {
 
   getData(userName: string):Observable<any>{
     const {urlToken} = environment;
-
+    
    return this.http.get<any>(`https://api.github.com/users/${userName}?access_token=${urlToken}`)
   }
 

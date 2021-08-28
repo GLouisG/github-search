@@ -6,7 +6,7 @@ import { SearchDataService } from '../services/search-data.service';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
-  users!: String[];
+  users!: any;
   constructor(private searchService : SearchDataService) {
    
    }
@@ -15,6 +15,7 @@ export class SearchComponent implements OnInit {
   }
   search(query: string){
     this.searchService.getData(query).subscribe((data) => {
+      this.users=data;
       console.log(data);
     })
   }
