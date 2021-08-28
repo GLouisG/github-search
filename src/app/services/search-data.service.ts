@@ -9,20 +9,23 @@ import{environment} from 'src/environments/environment'
 })
 
 export class SearchDataService {
-  username!: string;
+
   
   token = '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';
   
   
-  constructor(private http:HttpClient) { 
-    this.username = 'GLouisG';
+  constructor(private http:HttpClient) {
 
   }
 
-  getData(userName: string):Observable<any>{
+  getUserData(userName: string):Observable<any>{
     const {urlToken} = environment;
     
    return this.http.get<any>(`https://api.github.com/users/${userName}?access_token=${urlToken}`)
+  }
+  getRepoData(repoFinder: string):Observable<any>{
+    const {urlToken} = environment;
+    return this.http.get<any>(`https://api.github.com/search/repositories?q=${repoFinder}&?access_token=${urlToken}`)
   }
 
 }
