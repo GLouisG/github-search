@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
-import { map } from 'rxjs/operators';
+import {Observable} from 'rxjs'
 import{environment} from 'src/environments/environment'
 
 
@@ -10,6 +10,7 @@ import{environment} from 'src/environments/environment'
 
 export class SearchDataService {
   username!: string;
+  
   token = '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';
   
   
@@ -17,12 +18,11 @@ export class SearchDataService {
     this.username = 'GLouisG';
 
   }
-  getUserInfo(){
+
+  getData(userName: string):Observable<any>{
     const {urlToken} = environment;
-    return this.http.get(`https://api.github.com/users/${this.username}?access_token=${urlToken}`).pipe(map(data => {})).subscribe(result => {
-      console.log(result);
-    });
-   
+
+   return this.http.get<any>(`https://api.github.com/users/${userName}?access_token=${urlToken}`)
   }
 
 }

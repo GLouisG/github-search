@@ -6,11 +6,17 @@ import { SearchDataService } from '../services/search-data.service';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
- 
-  constructor(private searchService : SearchDataService) { }
+  users!: String[];
+  constructor(private searchService : SearchDataService) {
+   
+   }
   ngOnInit(): void {
    
   }
- 
+  search(query: string){
+    this.searchService.getData(query).subscribe((data) => {
+      console.log(data);
+    })
+  }
 
 }
