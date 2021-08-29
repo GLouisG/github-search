@@ -5,10 +5,10 @@
   </div>
   
   <div class="user">
-    <div class="card" *ngIf="users" appUserDirective>
+    <div class="card usercard" *ngIf="users" appUserDirective>
       <h4>USER</h4>
       <img class="user-img" src="{{users.avatar_url}}" alt="IMG">
-      <p>{{users.login}}</p>
+      <p>Username: {{users.login}}</p>
       <p>User Name: {{users.name}}</p>
       <a href="{{users.html_url}}">View User and Repositories</a>
       <p>Created {{users.created_at|dateCounter}} days ago</p>
