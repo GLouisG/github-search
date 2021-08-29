@@ -11,6 +11,8 @@ import { NaviComponent } from './navi/navi.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RepoComponent } from './repo/repo.component';
 import { DateCounterPipe } from './date-counter.pipe';
+import { RepoDirectiveDirective } from './repo-directive.directive';
+import { UserDirectiveDirective } from './user-directive.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { DateCounterPipe } from './date-counter.pipe';
     NaviComponent,
     NotFoundComponent,
     RepoComponent,
-    DateCounterPipe
+    DateCounterPipe,
+    RepoDirectiveDirective,
+    UserDirectiveDirective
   ],
   imports: [
     BrowserModule,

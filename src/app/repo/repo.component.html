@@ -1,5 +1,5 @@
  <div class="repositories">
-    <div *ngFor="let repo of repos" class="card" >
+    <div *ngFor="let repo of repos" class="card" appRepoDirective>
       <a href="{{repo.html_url}}">View Repository</a>
       <p>Repository Name: {{repo.name}}</p>
       <p>Created {{repo.created_at|dateCounter}} days ago</p>

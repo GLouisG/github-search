@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="card my-profile" *ngIf="user">
+  <div class="card my-profile" *ngIf="user" appUserDirective>
     <br>
     <img class="user-img" src="{{user.avatar_url}}" alt="IMG">
     <p>User Name{{user.login}}</p>
@@ -8,7 +8,7 @@
     <br>
   </div>
   <div class="myrepositories">
-    <div *ngFor="let myRepo of myRepos" class="card myreps" >
+    <div *ngFor="let myRepo of myRepos" class="card myreps" appRepoDirective>
       <p>Repository Name: {{myRepo.name}}</p>
       <p>Created {{myRepo.created_at|dateCounter}} days ago</p>
       <a href="{{myRepo.html_url}}">View Repository</a>

@@ -13,11 +13,11 @@ img{
 .my-profile{
   position: relative;
   text-align: center;
-  background: red;
+  background:#EF5455;
   left: 32%;
   width: 400px;
 }
-.my-profile a{
+a{
   color:rgb(226, 230, 33);
 }
 
