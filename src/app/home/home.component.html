@@ -10,7 +10,7 @@
   <div class="myrepositories">
     <div *ngFor="let myRepo of myRepos" class="card myreps" >
       <p>Repository Name: {{myRepo.name}}</p>
-      <p>Created: {{myRepo.created_at|date}}</p>
+      <p>Created {{myRepo.created_at|dateCounter}} days ago</p>
       <a href="{{myRepo.html_url}}">View Repository</a>
     </div>
   </div>
