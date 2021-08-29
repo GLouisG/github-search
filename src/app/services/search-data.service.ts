@@ -9,11 +9,7 @@ import{environment} from 'src/environments/environment'
 })
 
 export class SearchDataService {
-
-  
-  token = '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';
-  
-  
+ 
   constructor(private http:HttpClient) {
 
   }

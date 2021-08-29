@@ -14,10 +14,5 @@
      
     </div>
   </div>
-  
-  <div class="repositories">
-    <div *ngFor="let repo of repos" class="card" >
-      <p>{{repo.name}}</p>
-    </div>
-  </div>
+  <app-repo [repos]="repos" > </app-repo>
 </div>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
+import { SearchDataService } from '../services/search-data.service';
 
 @Component({
   selector: 'app-repo',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./repo.component.css']
 })
 export class RepoComponent implements OnInit {
-
-  constructor() { }
-
+  
+  @Input() repos!: any[];
+  
+  constructor(private dataServices:SearchDataService) { }
+ 
   ngOnInit(): void {
+   
   }
 
 }

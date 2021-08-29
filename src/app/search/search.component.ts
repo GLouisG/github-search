@@ -20,10 +20,11 @@ export class SearchComponent implements OnInit {
       this.users=data;
     })
       this.searchService.getRepoData(query).subscribe((result) => {
-      console.log(result);  
-      this.repos=result.items;  
-    })
+        console.log(result);  
+        this.repos=result.items;  
+      })
     }
-  
+ 
+
 
 }
