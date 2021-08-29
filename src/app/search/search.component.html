@@ -1,21 +1,23 @@
-<div class="search">
-  <h3>Github Search</h3>
-  <input type="text" placeholder="Git Searcher..." #finder (keyup) ="search(finder.value)">
-</div>
-
-<div class="user">
-  <div *ngIf="users">
-    <p>Hi</p>
-    <img class="user-img" src="{{users.avatar_url}}" alt="IMG">
-    <p>{{users.login}}</p>
-    <p>Name: {{users.name}}</p>
-    <a href="{{users.html_url}}">Go to Repo</a>
-   
+<div class="container">
+  <div class="search">
+    <h3>Github Search</h3>
+    <input type="text" placeholder="Git Searcher..." #finder (keyup) ="search(finder.value)">
   </div>
-</div>
-
-<div class="repositories">
-  <div *ngFor="let repo of repos" class="card" >
-    <p>{{repo.name}}</p>
+  
+  <div class="user">
+    <div *ngIf="users">
+      <p>Hi</p>
+      <img class="user-img" src="{{users.avatar_url}}" alt="IMG">
+      <p>{{users.login}}</p>
+      <p>Name: {{users.name}}</p>
+      <a href="{{users.html_url}}">Go to Repo</a>
+     
+    </div>
+  </div>
+  
+  <div class="repositories">
+    <div *ngFor="let repo of repos" class="card" >
+      <p>{{repo.name}}</p>
+    </div>
   </div>
 </div>
