@@ -1,4 +1,4 @@
 export const environment = {
-  urlToken : "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 ",
+  urlToken : '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',
   production: true
 };
