@@ -2,8 +2,8 @@
   <div class="card my-profile" *ngIf="user" appUserDirective>
     <br>
     <img class="user-img" src="{{user.avatar_url}}" alt="IMG">
-    <p>User Name{{user.login}}</p>
-    <p>Name: {{user.name}}</p>
+    <p>Username: <a href="{{user.html_url}}" >{{user.login}}</a></p>
+    <p>User Name: {{user.name}}</p>
     <a href="{{user.html_url}}">Go to User Profile</a>
     <br>
   </div>
