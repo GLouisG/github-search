@@ -1,27 +1,18 @@
 # GithubSearch
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
+## Authors and Contributors
+- Louis Gacho  
+- E-mail: louis.gacho@student.moringaschool.com  
+## Descriptions and Details
+- This is a simple search tool that allows you to search for github users and repositories and see their details. The program uses github API to achieve this.    
+- Requires the script.js file in order to carry out calculations.  
+- Project made using ANGULAR, HTML and CSS.  
+- The program can be run locally using angular live server ensure that you have the latest angular version, node modules and other application files.  
+- It is live on GitHub Pages and can be seen by following the link.  
+- Link: https://glouisg.github.io/github-search/  
+## Demo
+- 
+## License
+- https://choosealicense.com/licenses/mit/
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
