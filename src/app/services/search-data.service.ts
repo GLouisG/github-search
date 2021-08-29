@@ -27,5 +27,9 @@ export class SearchDataService {
     const {urlToken} = environment;
     return this.http.get<any>(`https://api.github.com/users/GLouisG?access_token=${urlToken}`)
   }
+  getHomeRepos(){
+    const {urlToken} = environment;
+    return this.http.get<any>(`https://api.github.com/users/GLouisG/repos?access_token=${urlToken}`)
+  }
 }
 

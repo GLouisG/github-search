@@ -1,0 +1,19 @@
+.container{
+ 
+}
+.myrepositories{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+img{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+}
+.my-profile{
+  position: relative;
+  text-align: center;
+  background: red;
+  left: 32%;
+  width: 400px;
+}

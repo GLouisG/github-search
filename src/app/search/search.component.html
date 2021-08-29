@@ -1,7 +1,7 @@
 <div class="container">
   <div class="search">
     <h3>Github Search</h3>
-    <input type="text" placeholder="Git Searcher..." #finder (keyup) ="search(finder.value)">
+    <input type="text" placeholder="Git Searcher..." #finder (keyup.enter) ="search(finder.value)">
   </div>
   
   <div class="user">
@@ -10,8 +10,8 @@
       <img class="user-img" src="{{users.avatar_url}}" alt="IMG">
       <p>{{users.login}}</p>
       <p>Name: {{users.name}}</p>
-      <a href="{{users.html_url}}">Go to User</a>
-     
+      <a href="{{users.html_url}}">View User and Repositories</a>
+      <p>Created: {{users.created_at|date}}</p>
     </div>
   </div>
   <app-repo [repos]="repos" > </app-repo>
