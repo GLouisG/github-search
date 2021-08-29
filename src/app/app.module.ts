@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { NaviComponent } from './navi/navi.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RepoComponent } from './repo/repo.component';
+import { DateCounterPipe } from './date-counter.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RepoComponent } from './repo/repo.component';
     HomeComponent,
     NaviComponent,
     NotFoundComponent,
-    RepoComponent
+    RepoComponent,
+    DateCounterPipe
   ],
   imports: [
     BrowserModule,

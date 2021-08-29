@@ -1,9 +1,11 @@
 <div class="container">
   <div class="card my-profile" *ngIf="user">
+    <br>
     <img class="user-img" src="{{user.avatar_url}}" alt="IMG">
-    <p>{{user.login}}</p>
+    <p>User Name{{user.login}}</p>
     <p>Name: {{user.name}}</p>
     <a href="{{user.html_url}}">Go to User Profile</a>
+    <br>
   </div>
   <div class="myrepositories">
     <div *ngFor="let myRepo of myRepos" class="card myreps" >
